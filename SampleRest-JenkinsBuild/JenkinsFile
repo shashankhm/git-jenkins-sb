@@ -1,22 +1,22 @@
 pipeline{
-  agent{
-     any
-    }
-    tools{
-     maven 'M3'
-    }
-  stages{
-    stage('checkout'){
-     steps{
-       git 'https://github.com/shashankhm/git-jenkins-sb.git'
-          }
-       }
-       
-     stage('build'){
-     steps{
-      sh echo 'in Build'
-          }
-       }
-       
-     }
-  }
+		agent{
+			any
+		}
+		tools{
+			maven 'maven 3.5.2'
+		}
+		stages{
+			stage('checkout'){
+				steps{
+					git 'https://github.com/shashankhm/git-jenkins-sb.git'
+				}
+			}
+
+			stage('build'){
+				steps{
+					sh echo 'in Build'
+				}
+			}
+
+		}
+	}
