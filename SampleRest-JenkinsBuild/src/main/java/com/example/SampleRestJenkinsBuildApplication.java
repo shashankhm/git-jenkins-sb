@@ -11,7 +11,7 @@ public class SampleRestJenkinsBuildApplication {
 	
 	@RequestMapping("/")
 	public String getMessage() {
-		return "SB/ Rest plumbing successful.";
+		return "Hello!";
 	}
 
 	public static void main(String[] args) {
